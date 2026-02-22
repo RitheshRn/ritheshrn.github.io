@@ -1,489 +1,599 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Profile &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rithesh Murthy — AI Researcher & Builder</title>
+    <meta name="description" content="Rithesh Murthy — Senior Applied Scientist at Salesforce AI Research. Building AI systems across LLMs, agents, and enterprise products. 20+ papers, 10+ patents.">
+    <meta name="keywords" content="Rithesh Murthy, Rithesh R N, AI Research, LLM, Agents, Machine Learning, Salesforce, xLAM, MobileAIBench, Promptomatix">
+    <meta name="author" content="Rithesh Murthy">
 
-	<!-- 
-	//////////////////////////////////////////////////////
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rithesh Murthy — AI Researcher & Builder">
+    <meta property="og:description" content="Senior Applied Scientist at Salesforce AI Research. 20+ papers, 10+ patents, #1 Berkeley Function-Calling Leaderboard.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ritheshrn.com">
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-	//////////////////////////////////////////////////////
-	 -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+    <!-- Navigation -->
+    <nav class="navbar" id="main-nav">
+        <div class="nav-inner">
+            <a class="nav-brand" href="#home">Rithesh Murthy</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#life" class="nav-link">Life</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    <!-- ═══════════════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════════════ -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-photo-col">
+                    <div class="hero-photo-wrapper">
+                        <img src="images/headshot.jpeg" alt="Rithesh Murthy">
+                    </div>
+                </div>
+                <div class="hero-content-col">
+                    <h1 class="hero-name">Rithesh Murthy</h1>
+                    <p class="hero-also-known">also known as Rithesh R N</p>
+                    <p class="hero-role">
+                        Senior Applied Scientist
+                        <span class="role-separator">@</span>
+                        <span class="hero-company">Salesforce AI Research</span>
+                    </p>
+                    <p class="hero-bio">
+                        I build AI systems that ship — from research ideas to production products.
+                        My work lives at the intersection of LLMs, autonomous agents, and enterprise AI.
+                        I care deeply about research that matters and products that work.
+                    </p>
+                    <p class="hero-location">
+                        <i class="fas fa-map-marker-alt"></i> San Francisco, CA
+                    </p>
+                    <p class="hero-coffee">Always happy to grab coffee and talk AI, startups, or terrible puns.</p>
+                    <div class="hero-links">
+                        <a href="https://www.linkedin.com/in/rithesh-r-n/" target="_blank" class="hero-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://x.com/rithesh__rn" target="_blank" class="hero-link">
+                            <i class="fab fa-x-twitter"></i> X/Twitter
+                        </a>
+                        <a href="https://scholar.google.ca/citations?user=Y1XpJucAAAAJ&hl=en" target="_blank" class="hero-link">
+                            <i class="fas fa-graduation-cap"></i> Scholar
+                        </a>
+                        <a href="https://openreview.net/profile?id=~Rithesh_Murthy1" target="_blank" class="hero-link">
+                            <i class="fas fa-book-open"></i> OpenReview
+                        </a>
+                        <a href="mailto:rithesh.murthy@salesforce.com" class="hero-link">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	</head>
-	<body>
-		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/user-35.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/user-31.png);"></div>
-							<h1><span>Rithesh R N</span></h1>
-							<h3><span>Graduate Student at UC San Diego</span></h3>
-							
-							
-							<p>
-								<p>
-								<h2><span><br>&#8744;</br></span></h2>
-								</p>
-							</p>
-							
-						</div>
-					
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+    <!-- ═══════════════════════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════════════════════ -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a Senior Applied Scientist at <strong>Salesforce AI Research</strong> in the Bay Area, where I sit at the intersection of research and product. My work spans model training, agent architectures, benchmarking, evaluation, and everything in between.</p>
+                    <p>My long-term goal is to <strong>build systems that elevate human capability</strong> — technologies that sharpen judgment, expand creativity, and help individuals and institutions become more intentional, effective, and principled in how they operate.</p>
+                    <p>Before Salesforce, I built conversational AI at <strong>Embodied Inc.</strong>, did research with Prof. Julian McAuley at UC San Diego, and interned at Q-Centrix building ML models for healthcare. I hold an MS in CS (AI) from UCSD and a BE from R.V. College of Engineering, Bangalore.</p>
+                    <p>Outside of work, I'm happiest when I'm moving — whether that's hiking up a mountain, surfing a new break, skiing fresh powder, or disappearing into a country I've never been to before. Travel and adventure aren't hobbies; they're how I stay curious and alive.</p>
+                </div>
+                <div class="about-sidebar">
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-hammer sidebar-icon"></i> Currently Building</h4>
+                        <ul class="sidebar-list">
+                            <li>Customer simulation platform for agent training & evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-microscope sidebar-icon"></i> Research Focus</h4>
+                        <ul class="sidebar-list">
+                            <li>Autonomous AI agents</li>
+                            <li>Large language models</li>
+                            <li>Benchmarking & evaluation</li>
+                            <li>On-device AI</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card sidebar-card-open">
+                        <h4><i class="fas fa-handshake sidebar-icon"></i> Open To</h4>
+                        <ul class="sidebar-list">
+                            <li>Research collaborations</li>
+                            <li>Co-founding conversations</li>
+                            <li>Advisory roles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>~ About Me ~</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<ul class="info">
-						<li><span class="first-block">Full Name:</span><span class="second-block">Rithesh Ramapura Narasimha Murthy</span></li>
-						<li><span class="first-block">Phone:</span><span class="second-block">+1 858-405-6243</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block">rramapur@eng.ucsd.edu</span></li>
-						</ul>
-					<ul class="fh5co-social-icons">
-							<li><a href="https://www.facebook.com/rithesh.kingmaker"><i class="icon-facebook2"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/rithesh-r-n"><i class="icon-linkedin2"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-8">
-					<h2>Hello There!</h2>
-					<p>I am Rithesh. I am pursuing Master's degree in Computer Science at University of California San Diego. My primary area of focus is in Natural Language Processing, Machine Learning and Deep Learning.</p>
-					<p>During my undergrad at R. V. College of Engineering, India I was actively involved in research projects in the field of Autonomous Traffic Signal Control, Driver-Relay problem, Intrusion detection system etc. This steered me to publish three research papers at prestigious journals and conferences. Out of which one of the papers won 'BEST PAPER' award at Fourth International Conference on Image Information Processing (IEEE) - Dec 2017.
-					</p>
-					<p>
-						Besides my research interests and academic life, I've spent most of my free time exploring the nuances of acting. Being an active member of the college
-dramatics club named ‘Circle of Acting at RV’, I have acted in 15+ plays, 3 short movies and I have represented college at State and National Level competitions. 
-					</p>
-					<p>
-						I am currently focusing on studying the effectiveness of NLP driven solutions to the business problems such as Anomaly detection in Banking operation, Identifying Unhealthy statements in Social media, Disease prediction using patient's EMR(Electronic Medical Records) etc.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- ═══════════════════════════════════════════════════════
+         RESEARCH
+    ═══════════════════════════════════════════════════════ -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title">Research</h2>
+            <p class="section-subtitle">20+ papers · 10+ patents · ICLR, NeurIPS, IEEE and more</p>
 
-	<div id="fh5co-resume" class="fh5co-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>~ Work Experience & Education ~</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
-						</li>
-						
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Data Science Intern</h3>
-									<span class="company">Q-Centrix - June 2019 - Aug. 2019</span>
-								</div>
-								<div class="timeline-body">
-									<ul>
-									<li style="font-size: 12px; line-height: 14px; text-align: justify;"><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"><strong>Live IRR:</strong> Built ML models to predict the answers for the questions in Cath PCI registry using Electronic Medical Records(EMRs). Achieved an Avg. F1 score of 87% across 377 questions.</span></li>
-									<li style="font-size: 12px; line-height: 14px; text-align: justify;"><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"><strong>Natural Language Processing:</strong> Built Deep Learning models to extract summary out of EMRs to answer Cath PCI registry questions. Explored state-of-the-art NLP techniques : ELMo, BERT etc. and built custom models for extractive summarization and achieved an F1-score of 67%.</span></li>
-									<li style="font-size: 12px; line-height: 14px; text-align: justify;"><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"><strong>Tools/Languages:</strong> Python, Numpy, Pandas, PyTorch and Keras</span><br/><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"> </span></li>
+            <!-- Featured Work -->
+            <h3 class="subsection-title">Featured Work</h3>
+            <div class="featured-grid">
 
-									</ul>
-									</div>
-							</div>
-						</li>
-						
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Software Development Intern</h3>
-									<span class="company">CA Technologies - Jan 2018 - May 2018</span>
-								</div>
-								<div class="timeline-body">
-									<ul>
-<li style="font-size: 12px; line-height: 14px; text-align: justify;"><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;">Built models to Analyze and Monitor the Performance of AXA(App Experience and Analytics) Platform, this model facilitated the development team to analyze and to keep track of the resource utilization in AXA platform. Also, I have Implemented API Automation for Application Experience and Analytics(AXA) Platform.</span></li>
-<li style="font-size: 12px; line-height: 14px; text-align: justify;"><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"><strong>Tools/Languages</strong>: JAVA and Kibana</span><br/><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"> </span></li>
-</ul>
-								</div>
-							</div>
-						</li>
-						
-						
-						
-						
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Deep Learning Intern</h3>
-									<span class="company">Indian Institute of Science (IISc), India  - June 2017 - Aug. 2017</span>
-								</div>
-								<div class="timeline-body">
-									<ul>
-<li style="font-size: 12px; line-height: 14px; text-align: justify;"><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"><strong>Convolution Neural Networks</strong> : Designed a Convolutional Neural Network(CNN) architecture for gender and direction classification for side-view images captured from a monitored trail. Built a CNN model which gave an accuracy of 94%. Also, Analyzed the state of the art CNN models such as VGG 16, VGG 19, AlexNet, ResNet and many more.</span></li>
-<li style="font-size: 12px; line-height: 14px; text-align: justify;"><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;">Defense Research and Development Organization (DRDO): The proposed CNN model was integrated with Infrared(IR) Sensor based Intrusion detection system and is currently being used by DRDO, India.</span></li>
-<li style="font-size: 12px; line-height: 14px; text-align: justify;"><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"><strong>Tools/Languages</strong>: Python and Keras</span><br/><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"> </span></li>
-</ul>
-								</div>
-							</div>
-						</li>
-						
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Software Development Intern</h3>
-									<span class="company">Gnostice Information Technologies Pvt. Ltd. - June 2016 - Aug 2016</span>
-								</div>
-								<div class="timeline-body">
-									<ul>
-<li style="font-size: 12px; line-height: 14px; text-align: justify;"><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;">Built models to Analyze and Monitor the Performance of AXA(App Experience and Analytics) Platform, this model facilitated the development team to analyze and to keep track of the resource utilization in AXA platform. Also, I have Implemented API Automation for Application Experience and Analytics(AXA) Platform.</span></li>
-<li style="font-size: 12px; line-height: 14px; text-align: justify;"><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"><strong>Tools/Languages</strong>: JAVA and Kibana</span><br/><span style="font-size: 14px; line-height: 16px; background-color: #ffffff;"> </span></li>
-</ul>
-								</div>
-							</div>
-						</li>
-						
+                <div class="featured-card featured-card-highlight">
+                    <div class="featured-card-header">
+                        <span class="venue-badge venue-blue">Open Source</span>
+                        <span class="impact-badge impact-orange"><i class="fab fa-github"></i>&nbsp;900+ Stars</span>
+                    </div>
+                    <h4>Promptomatix: Automated Prompt Optimization Framework</h4>
+                    <p>An open-source framework for systematic, automated prompt optimization — making prompt engineering reproducible and scalable. Trusted by 900+ developers on GitHub.</p>
+                    <a href="https://github.com/SalesforceAIResearch/promptomatix" target="_blank" class="card-link">View on GitHub →</a>
+                </div>
 
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
-						</li>
-						
-						
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Master's Degree</h3>
-									<span class="company">University of California San Diego - Sept. 2018 - March 2020</span>
-								</div>
-								<div class="timeline-body">
-									<p>MS in Computer Science with specialization in Artificial Intelligence.</p>
-								</div>
-							</div>
-						</li>
-						
-						
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Bachelor's Degree</h3>
-									<span class="company">R. V. College of Engineering, India - 2014 - 2018</span>
-								</div>
-								<div class="timeline-body">
-									<p>Bachelor of Engineering in Computer Science.</p>
-								</div>
-							</div>
-						</li>
-						
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+                <div class="featured-card">
+                    <div class="featured-card-header">
+                        <span class="venue-badge venue-blue">arXiv</span>
+                    </div>
+                    <h4>MobileAIBench: Benchmarking LLMs and LMMs for On-Device Use Cases</h4>
+                    <p>First comprehensive framework for evaluating LLMs and LMMs on mobile devices — spanning NLP, safety, and multimodal tasks across performance and efficiency dimensions.</p>
+                    <a href="https://arxiv.org/abs/2406.10290" target="_blank" class="card-link">Read paper →</a>
+                </div>
 
+                <div class="featured-card">
+                    <div class="featured-card-header">
+                        <span class="venue-badge venue-blue">Technical Report</span>
+                        <span class="impact-badge impact-blue"><i class="fas fa-trophy"></i>&nbsp;#1 Berkeley FCL</span>
+                    </div>
+                    <h4>xLAM: A Family of Large Action Models to Empower AI Agent Systems</h4>
+                    <p>The model family that ranked <strong>#1 on the Berkeley Function-Calling Leaderboard</strong>, outperforming GPT-4 and Claude-3 on tool-use and agent benchmarks.</p>
+                    <a href="https://arxiv.org/abs/2409.03215" target="_blank" class="card-link">Read paper →</a>
+                </div>
 
-	<div id="fh5co-skills" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>~ Skills ~</h2>
-				</div>
-			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Python</strong>Advanced</span></div>
-				</div>
-				
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>C</strong>Advanced</span></div>
-				</div>
+                <div class="featured-card">
+                    <div class="featured-card-header">
+                        <span class="venue-badge venue-purple">NeurIPS 2024</span>
+                        <span class="impact-badge impact-green"><i class="fas fa-fire"></i>&nbsp;Top-3 HuggingFace</span>
+                    </div>
+                    <h4>APIGen: Automated Pipeline for Generating Function-Calling Datasets</h4>
+                    <p>Automated pipeline for verifiable, diverse function-calling datasets. Associated dataset <strong>xlam-function-calling-60k</strong> was Top-3 trending on HuggingFace in July 2024.</p>
+                    <a href="https://scholar.google.ca/citations?user=Y1XpJucAAAAJ&hl=en" target="_blank" class="card-link">View on Scholar →</a>
+                </div>
 
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="70"><span><strong>C++</strong>Intermediate</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="40"><span><strong>Java</strong>Basic</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="70"><span><strong>MySQL</strong>Intermediate</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="70"><span><strong>HTML</strong>Intermediate</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Numpy-Pandas</strong>Advanced</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="70"><span><strong>PyTorch</strong>Intermediate</span></div>
-				</div>
-				
-				
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="70"><span><strong>Keras</strong>Intermediate</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="70"><span><strong>Tensorflow</strong>Intermediate</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="70"><span><strong>PySpark</strong>Intermediate</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="70"><span><strong>Visualization</strong>Intermediate</span></div>
-				</div>
-				
-				
-				
-			</div>
-			
-			</div>
-		</div>
-	</div>
-	<div id="fh5co-blog">
-	
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>~ Projects ~</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a class="work" style="background-image: url(images/q17.png);">
-						<div class="desc">
-							
-							<span>Designed and Implemented a LSTM(Long Short Term Memory) model for identifying Insincere Questions(-- those founded upon false premises, or that intend to make a statement rather than look for helpful answer) in quora.</span>
-							<span><br>Tools/Languages: Python, PyTorch and Keras.</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a class="work" style="background-image: url(images/q22.png);">
-						<div class="desc">
-							<span>Built Deep Learning model named Ex-Su to extract summary out of EMRs(Electronic Medical Records) to answer Cath PCI registry questions
-							and achieved an <b>F1-score of 67%.</b>
-							Explored state-of-the-art NLP techniques : ELMo, BERT etc. and built various custom models for extractive
-							summarization </span>
-							<span><br>Tools/Languages: Python, Numpy, Pandas, PyTorch and Keras</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a class="work" style="background-image: url(images/q19.png);">
-						<div class="desc">
-							
-							<span>Implemented Recurrent Neural Network(LSTM) based model for predicting the optimal amount of resources required for completing a GPU driven task.</span>
-							<span><br>Tools/Languages : Python, PyTorch, Keras</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a class="work" style="background-image: url(images/q20.png);">
-						<div class="desc">
-							<span>Designed and Implemented an Autonomous Traffic Signal Control System using Decision Tree to optimize the traffic flow and reduce congestion</span>
-							
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a class="work" style="background-image: url(images/q21.png);">
-						<div class="desc">
-							<span>Built a 5 layered Recurrent Neural Network(LSTM) based model for Piano Music generation.</span>
-							<span><br>Tools/Languages : Python, PyTorch, Keras</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a class="work" style="background-image: url(images/q23.png);">
-						<div class="desc">
-							<span>Purchase and Rating prediction at Amazon website.</span>
-							<span><br>Tools/Language : Python, sklearn, Pandas</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a class="work" style="background-image: url(images/q24.png);">
-						<div class="desc">
-							<span>Used Image Processing technique to continuously locate the pixel co-ordinates of the centroid of ship from a video.</span>
-							<span><br>Tools/Languages : Python, OpenCV</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a class="work" style="background-image: url(images/q25.png);">
-						<div class="desc">
-							<span>Conversion of sketch to multi-view images using conditional GAN.</span>
-							<span>-----</span>
-							<span>Designed and Implemented HANGMAN game using conditional probability and Bayes' Theorem</span>
-							<span>-----</span>
-							<span>Video de-noising using NLM algorithm.</span>
-							<span>-----</span>
-							<span>Twitter Sentiment analysis using Bayes' Theorem. </span>
-							
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+                <div class="featured-card">
+                    <div class="featured-card-header">
+                        <span class="venue-badge venue-gold">ICLR 2024 Spotlight</span>
+                    </div>
+                    <h4>Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization</h4>
+                    <p>Policy gradient-based framework that reinforces language agents through retrospective reflection. Selected as an <strong>ICLR 2024 Spotlight</strong> — top ~5% of submissions.</p>
+                    <a href="https://arxiv.org/abs/2308.02151" target="_blank" class="card-link">Read paper →</a>
+                </div>
 
-	<div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>~ Publications ~</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="https://drive.google.com/file/d/1KvwT12mORHOqZzuwl4MknVBW0jiAvz14/view" class="blog-bg" style="background-image: url(images/p1.png);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Dec 2017</span>
-							
-							<p><strong>Direction and Gender Classification Using Convolutional Neural Network For Side-View Images Captured From a Monitored Trail:</strong> Fourth International Conference on Image Information Processing (IEEE), Tarun Choubisa, Mohan Kashyap, <strong>Rithesh R N</strong>, Sampad B. Mohanty - Dec. 2017</p>
-							<ul class="stuff">
-		
-								<li><a href="https://drive.google.com/file/d/1KvwT12mORHOqZzuwl4MknVBW0jiAvz14/view">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="https://drive.google.com/file/d/1nFaMWWcbzxDwPN56xdXzhfJEUaHwyjy2/view" class="blog-bg" style="background-image: url(images/p6.png);"></a>
-						<div class="blog-text">
-							<span class="posted_on">June 2018</span>
-							
-							<p><strong>Autonomous Traffic Signal Control Using Decision Tree:</strong> International Journal of Electrical and Computer Engineering, <strong>Rithesh R N</strong>, R Vignesh, Dr. Anala M R - June. 2018<br><br><br><br></p>
-							<ul class="stuff">
+                <div class="featured-card">
+                    <div class="featured-card-header">
+                        <span class="venue-badge venue-blue">ICLR 2025</span>
+                    </div>
+                    <h4>Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents</h4>
+                    <p>Multi-agent framework that leverages the complementary strengths of diverse specialized agents to outperform any single framework on complex software engineering tasks.</p>
+                    <a href="https://arxiv.org/abs/2408.07060" target="_blank" class="card-link">Read paper →</a>
+                </div>
 
-								<li><a href="https://drive.google.com/file/d/1nFaMWWcbzxDwPN56xdXzhfJEUaHwyjy2/view">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="http://www.irjcs.com/volumes/vol4/iss08/07.AUCS10088.pdf" class="blog-bg" style="background-image: url(images/p9.png);"></a>
-						<div class="blog-text">
-							<span class="posted_on">August 2017</span>
-							
-							<p><strong>SVM - KNN : A Novel Approach to Classification Based on SVM and KNN:</strong> International Research Journal of Computer Science, <strong>Rithesh R N</strong> - Aug. 2017<br><br><br><br></p>
-							<ul class="stuff">
+            </div>
 
-								<li><a href="http://www.irjcs.com/volumes/vol4/iss08/07.AUCS10088.pdf">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
+            <!-- All Publications -->
+            <div class="publications-header">
+                <h3 class="subsection-title">All Publications</h3>
+            </div>
+            <div class="publications-list">
 
-	
-	
-	
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; 2017 HTML5 . All Rights Reserved. <br>Designed by: FreeHTML5.co</p>
-				</div>
-			</div>
-		</div>
-	</div>
+                <div class="pub-item">
+                    <div class="pub-year">2026</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">ICLR 2026</span>
+                        </div>
+                        <h4>LoCoBench: A Benchmark for Long-Context LLMs in Complex Software Engineering</h4>
+                        <p class="pub-authors">Jielin Qiu, Zuxin Liu, Zhiwei Liu, Jianguo Zhang, Haolin Chen, Shiyu Wang, Ming Zhu, Liangwei Yang, Juntao Tan, Zhepeng Cen, Cheng Qian, Shelby Heinecke, Weiran Yao, Silvio Savarese, Caiming Xiong, Huan Wang, <strong>Rithesh Murthy</strong></p>
+                    </div>
+                </div>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	
-	<!-- Main -->
-	<script src="js/main.js"></script>
+                <div class="pub-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">ICLR 2025</span>
+                        </div>
+                        <h4>Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents</h4>
+                        <p class="pub-authors">Kexun Zhang, Weiran Yao, Zuxin Liu, Yihao Feng, Zhiwei Liu, Tian Lan, Lei Li, Renze Lou, Jiacheng Xu, Bo Pang, Yingbo Zhou, Shelby Heinecke, Silvio Savarese, Huan Wang, <strong>Rithesh Murthy</strong>, Caiming Xiong</p>
+                        <a href="https://arxiv.org/abs/2408.07060" target="_blank" class="pub-link">arXiv →</a>
+                    </div>
+                </div>
 
-	</body>
+                <div class="pub-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">arXiv</span>
+                        </div>
+                        <h4>MobileAIBench: Benchmarking LLMs and LMMs for On-Device Use Cases</h4>
+                        <p class="pub-authors"><strong>Rithesh Murthy</strong>, Liangwei Yang, Juntao Tan, Tulika Manoj Awalgaonkar, Yilun Zhou, Shelby Heinecke, Sachin Desai, Chien-Sheng Wu, Ran Xu, Sarah Tan, Jianguo Zhang, Zhiwei Liu, Shirley Kokane, Zuxin Liu, Ming Zhu, Huan Wang, Caiming Xiong, Silvio Savarese</p>
+                        <a href="https://arxiv.org/abs/2406.10290" target="_blank" class="pub-link">arXiv →</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">BuildingTrust @ ICLR 2025</span>
+                        </div>
+                        <h4>ToolScan: A Benchmark For Characterizing Errors In Tool-Use LLMs</h4>
+                        <p class="pub-authors">Shirley Kokane, Ming Zhu, Tulika Manoj Awalgaonkar, Jianguo Zhang, Akshara Prabhakar, Thai Quoc Hoang, Zuxin Liu, Liangwei Yang, Weiran Yao, Juntao Tan, Zhiwei Liu, Huan Wang, Juan Carlos Niebles, Shelby Heinecke, <strong>Rithesh Murthy</strong>, Caiming Xiong, Silvio Savarese</p>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">Technical Report</span>
+                            <span class="pub-award"><i class="fas fa-trophy"></i> #1 Berkeley FCL</span>
+                        </div>
+                        <h4>xLAM: A Family of Large Action Models to Empower AI Agent Systems</h4>
+                        <p class="pub-authors">Jianguo Zhang, Tian Lan, Ming Zhu, Zuxin Liu, Thai Hoang, Shirley Kokane, Weiran Yao, Juntao Tan, Akshara Prabhakar, Haolin Chen, Zhiwei Liu, Yihao Feng, Tulika Awalgaonkar, <strong>Rithesh Murthy</strong>, Eric Hu, Zeyuan Chen, Ran Xu, Juan Carlos Niebles, Shelby Heinecke, Huan Wang, Silvio Savarese, Caiming Xiong</p>
+                        <a href="https://arxiv.org/abs/2409.03215" target="_blank" class="pub-link">arXiv →</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">NeurIPS 2024</span>
+                            <span class="pub-award impact-green-badge"><i class="fas fa-fire"></i> Top-3 HuggingFace</span>
+                        </div>
+                        <h4>APIGen: Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets</h4>
+                        <p class="pub-authors">Zuxin Liu, <strong>Rithesh Murthy</strong>, Thai Quoc Hoang, Jianguo Zhang, Ming Zhu, Tian Lan, Shirley Kokane, Juntao Tan, Weiran Yao, Zhiwei Liu, Yihao Feng, Liangwei Yang, Silvio Savarese, Juan Carlos Niebles, Huan Wang, Shelby Heinecke, Caiming Xiong</p>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">LLMAgents @ ICLR 2024</span>
+                        </div>
+                        <h4>AgentOhana: Design Unified Data and Training Pipeline for Effective Agent Learning</h4>
+                        <p class="pub-authors">Jianguo Zhang, Tian Lan, Zhiwei Liu, Weiran Yao, Juntao Tan, Thai Quoc Hoang, Liangwei Yang, Yihao Feng, Zuxin Liu, Ming Zhu, Tulika Manoj Awalgaonkar, <strong>Rithesh Murthy</strong>, Juan Carlos Niebles, Silvio Savarese, Shelby Heinecke, Huan Wang, Caiming Xiong</p>
+                        <a href="https://arxiv.org/abs/2402.15506" target="_blank" class="pub-link">arXiv →</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">LLMAgents @ ICLR 2024</span>
+                        </div>
+                        <h4>BOLAA: Benchmarking and Orchestrating LLM Autonomous Agents</h4>
+                        <p class="pub-authors">Zhiwei Liu, Weiran Yao, Jianguo Zhang, Le Xue, Shelby Heinecke, Yihao Feng, <strong>Rithesh Murthy</strong>, Zeyuan Chen, Juan Carlos Niebles, Devansh Arpit, Ran Xu, Phil L Mui, Huan Wang, Caiming Xiong, Silvio Savarese</p>
+                        <a href="https://arxiv.org/abs/2308.05960" target="_blank" class="pub-link">arXiv →</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">LLMAgents @ ICLR 2024</span>
+                        </div>
+                        <h4>REX: Rapid Exploration and eXploitation for AI Agents</h4>
+                        <p class="pub-authors">Shelby Heinecke, Juan Carlos Niebles, Zhiwei Liu, Le Xue, Weiran Yao, Yihao Feng, Zeyuan Chen, Akash Gokul, <strong>Rithesh Murthy</strong>, Devansh Arpit, Ran Xu, Phil L Mui, Huan Wang, Caiming Xiong, Silvio Savarese</p>
+                        <a href="https://arxiv.org/abs/2307.08962" target="_blank" class="pub-link">arXiv →</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue pub-venue-spotlight">ICLR 2024 Spotlight</span>
+                        </div>
+                        <h4>Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization</h4>
+                        <p class="pub-authors">Weiran Yao, Shelby Heinecke, Juan Carlos Niebles, Zhiwei Liu, Yihao Feng, Le Xue, Zeyuan Chen, <strong>Rithesh Murthy</strong>, Jianguo Zhang, Devansh Arpit, Ran Xu, Phil L Mui, Huan Wang, Caiming Xiong, Silvio Savarese</p>
+                        <a href="https://arxiv.org/abs/2308.02151" target="_blank" class="pub-link">arXiv →</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-year">2018</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">IJECE 2018</span>
+                        </div>
+                        <h4>Autonomous Traffic Signal Control Using Decision Tree</h4>
+                        <p class="pub-authors"><strong>Rithesh R N</strong>, R Vignesh, Dr. Anala M R</p>
+                        <a href="https://drive.google.com/file/d/1nFaMWWcbzxDwPN56xdXzhfJEUaHwyjy2/view" target="_blank" class="pub-link">View →</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-year">2017</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">IEEE ICIIP 2017</span>
+                            <span class="pub-award pub-award-gold"><i class="fas fa-award"></i> Best Paper Award</span>
+                        </div>
+                        <h4>Direction and Gender Classification Using CNN For Side-View Images</h4>
+                        <p class="pub-authors">Tarun Choubisa, Mohan Kashyap, <strong>Rithesh R N</strong>, Sampad B. Mohanty</p>
+                        <a href="https://drive.google.com/file/d/1KvwT12mORHOqZzuwl4MknVBW0jiAvz14/view" target="_blank" class="pub-link">View →</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-year">2017</div>
+                    <div class="pub-content">
+                        <div class="pub-meta-row">
+                            <span class="pub-venue">IRJCS 2017</span>
+                        </div>
+                        <h4>SVM-KNN: A Novel Approach to Classification Based on SVM and KNN</h4>
+                        <p class="pub-authors"><strong>Rithesh R N</strong></p>
+                        <a href="http://www.irjcs.com/volumes/vol4/iss08/07.AUCS10088.pdf" target="_blank" class="pub-link">View →</a>
+                    </div>
+                </div>
+
+            </div>
+            <p class="scholar-note">
+                Full list on
+                <a href="https://scholar.google.ca/citations?user=Y1XpJucAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                and
+                <a href="https://openreview.net/profile?id=~Rithesh_Murthy1" target="_blank">OpenReview</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         EXPERIENCE
+    ═══════════════════════════════════════════════════════ -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="exp-timeline">
+
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span class="exp-year">2022 —</span>
+                        <span class="exp-current-tag">Now</span>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Senior Applied Scientist</h3>
+                        <p class="exp-org">Salesforce AI Research &nbsp;·&nbsp; Palo Alto, CA</p>
+                        <p>Building and shipping AI systems across LLMs, agents, and enterprise products. Work spans research, engineering, and product integration — from concept to production at scale.</p>
+                        <ul>
+                            <li>Building customer simulation platform to model realistic behavior for agent training & evaluation</li>
+                            <li>Led MobileAIBench — first framework to evaluate LLMs and LMMs on mobile devices</li>
+                            <li>Optimized XGen-Small for Salesforce workflows via quantization, prompt engineering, and synthetic data pipelines</li>
+                            <li>Authored 20+ papers and filed 10+ patents in LLMs, agents, and applied ML</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span class="exp-year">2020 – 2021</span>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Applied ML / Jr. Applied ML Engineer</h3>
+                        <p class="exp-org">Embodied, Inc.</p>
+                        <p>Built NLP models for text classification, question answering, and abstractive text summarization. Developed and deployed ML solutions for a social companion robot platform.</p>
+                    </div>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span class="exp-year">2019 – 2020</span>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Graduate Research & Teaching Assistant</h3>
+                        <p class="exp-org">University of California, San Diego</p>
+                        <p>Research on Personalized Dialogue Agents with Prof. Julian McAuley. Taught <em>Data Science for Finance</em>, <em>Probability & Statistics</em>, and <em>Big Data Analytics</em> using PySpark.</p>
+                    </div>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <span class="exp-year">2019</span>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Data Science Intern</h3>
+                        <p class="exp-org">Q-Centrix</p>
+                        <p>Built ML models predicting Cath PCI registry answers from Electronic Medical Records. Built deep learning extractive summarization models for EMRs using ELMo & BERT.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Education -->
+            <h3 class="subsection-title" style="margin-top: 4rem;">Education</h3>
+            <div class="edu-list">
+
+                <div class="edu-item">
+                    <div class="edu-year">2018 – 2020</div>
+                    <div class="edu-content">
+                        <h4>MS, Computer Science <span class="edu-spec">· AI Specialization</span></h4>
+                        <p class="edu-school">University of California, San Diego</p>
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-year">2014 – 2018</div>
+                    <div class="edu-content">
+                        <h4>BE, Computer Science</h4>
+                        <p class="edu-school">R.V. College of Engineering, Bangalore</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         LIFE
+    ═══════════════════════════════════════════════════════ -->
+    <section id="life" class="section">
+        <div class="container">
+            <h2 class="section-title">Life</h2>
+            <p class="section-subtitle">Photography, adventure, and wherever the next flight takes me.</p>
+
+            <!-- Photography -->
+            <h3 class="subsection-title">Photography</h3>
+            <div class="photo-gallery" id="photoGallery">
+                <div class="photo-item">
+                    <img src="images/photogrphy/IMG_0020.jpg" alt="Photography" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="images/photogrphy/IMG_0118.jpg" alt="Photography" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="images/photogrphy/IMG_0140.jpg" alt="Photography" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="images/photogrphy/IMG_0548.jpg" alt="Photography" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="images/photogrphy/IMG_3318.jpg" alt="Photography" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="images/photogrphy/IMG_3349.jpg" alt="Photography" loading="lazy">
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <a href="photos.html" target="_blank" class="btn-view-photos">
+                    <i class="fa-solid fa-images"></i> View full photo gallery
+                </a>
+            </div>
+
+            <!-- Adventure -->
+            <h3 class="subsection-title" style="margin-top: 4rem;">Adventure</h3>
+            <div class="photo-gallery">
+                <div class="photo-item photo-item-wide">
+                    <img src="images/adventure/adventure.png" alt="Adventure" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Travel -->
+            <h3 class="subsection-title" style="margin-top: 4rem;">Travel</h3>
+            <p class="travel-intro">9 countries · 68 cities · always planning the next one.</p>
+
+            <div class="travel-map-container">
+                <div id="worldMap" class="world-map"></div>
+                <div class="map-legend">
+                    <div class="legend-item">
+                        <span class="legend-swatch" style="background-color: #334155;"></span>
+                        <span>Not visited</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-swatch" style="background-color: #2563eb;"></span>
+                        <span>Countries visited</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot" style="background-color: #dc2626;"></span>
+                        <span>Cities visited</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-stats">
+                <div class="travel-stat">
+                    <div class="travel-stat-num" id="countriesCount">9</div>
+                    <div class="travel-stat-label">Countries</div>
+                </div>
+                <div class="travel-stat">
+                    <div class="travel-stat-num" id="citiesCount">68</div>
+                    <div class="travel-stat-label">Cities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════════════════════ -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Let's Talk</h2>
+            <div class="contact-layout">
+                <p class="contact-intro">I'm open to research collaborations, co-founding conversations, and advisory opportunities. If you're building something ambitious in AI — or just want to grab coffee in SF — reach out.</p>
+                <div class="contact-links">
+                    <a href="mailto:rithesh.murthy@salesforce.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        rithesh.murthy@salesforce.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/rithesh-r-n/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        linkedin.com/in/rithesh-r-n
+                    </a>
+                    <a href="https://x.com/rithesh__rn" target="_blank" class="contact-link">
+                        <i class="fab fa-x-twitter"></i>
+                        X/Twitter — x.com/rithesh__rn
+                    </a>
+                    <a href="https://scholar.google.ca/citations?user=Y1XpJucAAAAJ&hl=en" target="_blank" class="contact-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        Google Scholar
+                    </a>
+                    <a href="https://openreview.net/profile?id=~Rithesh_Murthy1" target="_blank" class="contact-link">
+                        <i class="fas fa-book-open"></i>
+                        OpenReview
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> Rithesh Murthy &nbsp;·&nbsp; Built with curiosity, shipped with care.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/travel-map.js"></script>
+
+</body>
 </html>
-
