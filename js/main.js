@@ -97,6 +97,109 @@
         if (el) el.textContent = new Date().getFullYear();
     }
 
+    // ── Scroll Indicator Fade ───────────────────────────────
+    function scrollIndicatorFade() {
+        var indicator = document.querySelector('.scroll-indicator');
+        if (!indicator) return;
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                indicator.classList.add('faded');
+            } else {
+                indicator.classList.remove('faded');
+            }
+        }, { passive: true });
+    }
+
+    // ── Scroll-Triggered Animations ───────────────────────
+    function scrollAnimations() {
+        var elements = document.querySelectorAll('.animate-on-scroll');
+        if (!elements.length || !('IntersectionObserver' in window)) {
+            // Fallback: just show everything
+            elements.forEach(function (el) { el.classList.add('visible'); });
+            return;
+        }
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        elements.forEach(function (el, i) {
+            // Stagger siblings in grids
+            var parent = el.parentElement;
+            if (parent && (parent.classList.contains('featured-grid') ||
+                           parent.classList.contains('publications-list') ||
+                           parent.classList.contains('exp-timeline') ||
+                           parent.classList.contains('photo-gallery'))) {
+                var siblings = Array.prototype.slice.call(parent.querySelectorAll('.animate-on-scroll'));
+                var idx = siblings.indexOf(el);
+                el.style.transitionDelay = (idx * 0.08) + 's';
+            }
+            observer.observe(el);
+        });
+    }
+
+    // ── Collapsible Publications ──────────────────────────
+    function collapsiblePublications() {
+        var list = document.querySelector('.publications-list');
+        var toggle = document.querySelector('.pub-show-toggle');
+        if (!list || !toggle) return;
+
+        var items = list.querySelectorAll('.pub-item');
+        var VISIBLE_COUNT = 8;
+        var expanded = false;
+
+        if (items.length <= VISIBLE_COUNT) {
+            toggle.style.display = 'none';
+            return;
+        }
+
+        // Hide items beyond the threshold
+        function collapse() {
+            for (var i = VISIBLE_COUNT; i < items.length; i++) {
+                items[i].classList.add('pub-hidden');
+            }
+            toggle.textContent = 'Show all ' + items.length + ' publications';
+            expanded = false;
+        }
+
+        function expand() {
+            for (var i = VISIBLE_COUNT; i < items.length; i++) {
+                items[i].classList.remove('pub-hidden');
+                // Re-trigger animation
+                items[i].classList.remove('visible');
+                void items[i].offsetWidth; // force reflow
+                items[i].style.transitionDelay = ((i - VISIBLE_COUNT) * 0.06) + 's';
+                items[i].classList.add('visible');
+            }
+            toggle.textContent = 'Show less';
+            expanded = true;
+        }
+
+        collapse();
+
+        toggle.addEventListener('click', function () {
+            if (expanded) {
+                collapse();
+                // Scroll back to publications header
+                var header = document.querySelector('.publications-header');
+                if (header) {
+                    var navH = document.querySelector('.navbar').offsetHeight;
+                    window.scrollTo({
+                        top: header.getBoundingClientRect().top + window.pageYOffset - navH - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            } else {
+                expand();
+            }
+        });
+    }
+
     // ── Init ───────────────────────────────────────────────
     document.addEventListener('DOMContentLoaded', function () {
         mobileNav();
@@ -105,6 +208,9 @@
         activeNavHighlight();
         initPhotoGallery();
         setCurrentYear();
+        scrollIndicatorFade();
+        scrollAnimations();
+        collapsiblePublications();
     });
 
 })();
